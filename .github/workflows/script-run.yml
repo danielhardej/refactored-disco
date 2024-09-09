@@ -12,16 +12,20 @@ jobs:
     
         - name: Run script
           run: |
+            chmod +x ./scripts/script.sh
             ./scripts/script.sh "dansbeerlist.txt"
 
         - name: Read from TXT file
           run: |
+            chmod +x ./scripts/readfile.sh
             ./scripts/readfile.sh "dansbeerlist.txt"
             
         - name: Compile and run
           run: |
+            chmod +x ./scripts/compileandrun.sh
             ./scripts/compileandrun.sh
         
         - name: Run script with args
           run: |
+            chmod +x ./scripts/echoargs.sh
             ./scripts/echoargs.sh "poop" "arg2"
